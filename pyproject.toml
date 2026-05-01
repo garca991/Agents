@@ -1,0 +1,13 @@
+[project]
+name = "flights-agent"
+version = "0.1.0"
+dependencies = [
+    "google-adk",
+    "mcp",
+    "requests",
+    "python-dotenv",
+    "streamlit"
+]
+
+[tool.agent-starter-pack.settings]
+agent_directory = "flights_agent"

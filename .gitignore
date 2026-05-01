@@ -1,0 +1,16 @@
+# Entornos Virtuales
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+
+# Variables de Entorno (¡CRÍTICO!)
+.env
+
+# Archivos de la base de datos o temporales
+*.log
+flights_agent/mcp_debug.log
+
+# Archivos propios de ADK
+.adk/
