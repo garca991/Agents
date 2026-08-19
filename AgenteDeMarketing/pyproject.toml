@@ -1,0 +1,24 @@
+[project]
+name = "agente_ventas"
+version = "0.1.0"
+description = "Sistema Multi-Agente de Marketing y Ventas con Supervisor, LangGraph y OpenRouter/LightPanda"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+    "langgraph>=1.0.0",
+    "langchain>=1.0.0",
+    "langchain-openai>=1.0.0",
+    "pydantic>=2.0.0",
+    "rich>=14.0.0",
+    "python-dotenv>=1.0.0",
+    "playwright>=1.40.0",
+]
+
+[build-system]
+requires = ["setuptools>=73.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["agente_ventas"]
+
+[tool.setuptools.package-dir]
+"agente_ventas" = "src/agente_ventas"
