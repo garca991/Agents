@@ -1,0 +1,20 @@
+# Dependencias
+node_modules/
+
+# Build
+dist/
+.mastra/
+*.tsbuildinfo
+
+# Datos locales (SQLite: memoria + observabilidad)
+data/
+
+# Logs
+*.log
+
+# Variables de entorno (NUNCA subir secretos)
+.env
+.env.development
+.env.production
+.env.local
+.env.*.local

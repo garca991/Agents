@@ -1,0 +1,207 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  max-width: 800px;
+  margin: 0 auto;
+  background: #fffdf9;
+  border-left: 1px solid #e6ded2;
+  border-right: 1px solid #e6ded2;
+}
+
+/* ---- Login ---- */
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 16px;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 360px;
+  background: #fffdf9;
+  border: 1px solid #e6ded2;
+  border-radius: 16px;
+  padding: 28px 24px;
+  box-shadow: 0 10px 30px rgba(111, 78, 55, 0.12);
+}
+
+.login-card h1 {
+  margin: 0;
+  text-align: center;
+  color: #6f4e37;
+}
+
+.login-card .sub {
+  text-align: center;
+  color: #9b8b79;
+  margin: 6px 0 20px;
+  font-size: 0.9rem;
+}
+
+.login-card label {
+  display: block;
+  font-size: 0.8rem;
+  color: #6f4e37;
+  margin-bottom: 12px;
+}
+
+.login-card input {
+  width: 100%;
+  margin-top: 4px;
+  padding: 10px 12px;
+  border: 1px solid #d9cdbd;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.login-card input:focus {
+  border-color: #6f4e37;
+}
+
+.login-card button {
+  width: 100%;
+  margin-top: 6px;
+  padding: 11px;
+  border: none;
+  border-radius: 10px;
+  background: #6f4e37;
+  color: #fff;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.login-card button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.login-card .error {
+  color: #b3261e;
+  font-size: 0.85rem;
+  margin: 0 0 8px;
+}
+
+.login-card .hint-users {
+  margin: 16px 0 0;
+  font-size: 0.72rem;
+  color: #9b8b79;
+  text-align: center;
+}
+
+.login-card code {
+  background: #f0e9df;
+  padding: 1px 5px;
+  border-radius: 4px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 16px;
+  border-bottom: 1px solid #e6ded2;
+  background: #6f4e37;
+  color: #fff;
+}
+
+.header h1 {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.72rem;
+  opacity: 0.95;
+}
+
+.meta button {
+  font-size: 0.72rem;
+  padding: 4px 8px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  background: transparent;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.chat {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hint {
+  color: #9b8b79;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.bubble {
+  max-width: 78%;
+  padding: 10px 14px;
+  border-radius: 14px;
+  white-space: pre-wrap;
+  line-height: 1.45;
+  font-size: 0.95rem;
+}
+
+.bubble.user {
+  align-self: flex-end;
+  background: #d7c4ae;
+  color: #2b2018;
+  border-bottom-right-radius: 4px;
+}
+
+.bubble.assistant {
+  align-self: flex-start;
+  background: #f0e9df;
+  color: #2b2018;
+  border-bottom-left-radius: 4px;
+}
+
+.composer {
+  display: flex;
+  gap: 8px;
+  padding: 12px;
+  border-top: 1px solid #e6ded2;
+  background: #fffdf9;
+}
+
+.composer input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid #d9cdbd;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.composer input:focus {
+  border-color: #6f4e37;
+}
+
+.composer button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 10px;
+  background: #6f4e37;
+  color: #fff;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.composer button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
